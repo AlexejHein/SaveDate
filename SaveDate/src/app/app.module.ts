@@ -14,6 +14,10 @@ import { AddDateComponent } from './Management/add-date/add-date.component';
 import { EditDateComponent } from './Management/edit-date/edit-date.component';
 import { SchuelerEditComponent } from './Edit/schueler-edit/schueler-edit.component';
 import { NavbarComponent } from './Navigation/navbar/navbar.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatInputModule} from "@angular/material/input";
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { NavbarComponent } from './Navigation/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
